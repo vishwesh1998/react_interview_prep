@@ -14,12 +14,12 @@ export default function Header(props){
                 <li className='name'>MEN</li>
                 <li className='name'>WOMEN</li>
                 <li className='name'>KIDS</li>
-                <li className='name'>HOME & LIVING</li>
+                <li className='name'>HOME</li>
                 <li className='name'>BEAUTY</li>
                 <li className='name'>STUDIO</li>
             </ul>
         </div>    
-        <div className='col-lg-12'>
+        <div className='col-lg-12 rightHeader'>
         <ul className='ul'>
                 <li><input type='text' placeholder='Search for product, brand and more' className='form-control'/></li>
                 <li className='headerFont'><Link to={'/'} style={{color:'black', textDecoration:'none'}}><RiHome2Line/> Home</Link> </li>

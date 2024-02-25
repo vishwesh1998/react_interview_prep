@@ -41,3 +41,34 @@
     /* margin-right: -4rem; */
     /* margin-left: 1px; */
 }
+
+
+@media only screen and (max-width: 480px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer{
+        /* wid; */
+        box-sizing: content-box;
+        width: 41em;
+        font-size: 1.4rem;
+    }
+
+    .leftFooter{
+        /* padding-top: 12rem; */
+        top: 10rem;
+    }
+
+    .leftFooter input{
+        width: 25%;
+    }
+
+    .rightFooter{
+        font-size: 1.2rem;
+        top: -6rem;
+        left: 5rem;
+    }
+    
+}

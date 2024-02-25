@@ -52,3 +52,49 @@ ul{
     font-size: 15px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 480px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        margin-bottom: 12em;
+        z-index: 0;
+        position:static;
+        /* top: 0; */
+        background: white;
+        height: 2rem;
+    }
+
+    .leftHeader{
+        position: relative;
+        left: 3rem;
+        font-size: 2rem;
+        
+    }
+
+    .rightHeader{
+        position: relative;
+        top: 5rem;
+        left: -35rem;
+        /* font-size: 12px; */
+
+        /* width: 50px; */
+        /* margin-top: 5rem; */
+        /* margin-left: -15rem; */
+    }
+
+    .ul li{
+        font-size: 1.4rem;
+    }
+    .rightHeader input{
+        width: 30rem;
+        border: 2px solid black;
+        height: 3rem;
+        margin-top: 1rem;
+        /* background: ; */
+        /* color: white; */
+    }
+}

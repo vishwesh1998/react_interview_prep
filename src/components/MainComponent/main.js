@@ -23,7 +23,7 @@ export default function Main(props){
 
         <div className='row brands'>
             <h2><b>MEDAL WORTHY BRANDS TO BAG</b></h2>
-            <div className='col-lg-12 d-flex'>
+            <div className='col-lg-12 d-flex box'>
                 {data?data.slice(0,6).map(p=><div className='brandBox'>
                     <img src={p.thumbnail}/>
                     <b>{p.price}/- Rs</b>
@@ -31,7 +31,7 @@ export default function Main(props){
                     <button className='btn-sm' onClick={()=>props.cartValue(p)}>Add To Cart</button>
                     </div>):''}
                 <div></div>
-            </div>
+                            </div>
         </div>
 
         
