@@ -26,6 +26,7 @@ export default function Main(){
             <div className='col-lg-12 d-flex'>
                 {data?data.slice(0,6).map(p=><div className='brandBox'>
                     <img src={p.thumbnail}/>
+                    <b>{p.price}/- Rs</b>
                     <br/>
                     <button className='btn-sm'>Add To Cart</button>
                     </div>):''}
@@ -39,6 +40,9 @@ export default function Main(){
             <div className='col-lg-12 d-flex'>
                 {data?data.slice(7,13).map(p=><div className='brandBox'>
                     <img src={p.thumbnail}/>
+                    {/* <br/> */}
+                    {/* <b>{p.brand}</b> */}
+                    <b>{p.price}/- Rs</b>
                     <br/>
                     <button className='btn-sm'>Add To Cart</button>
                     </div>):''}
@@ -53,7 +57,8 @@ export default function Main(){
         <div className='row'>
                 {data?data.slice(11,19).map(p=><div className='categoryBox col-lg-2'>
                     <img src={p.thumbnail}/>
-                    <br/>
+                    <b>{p.price}/- Rs</b>
+                    {/* <br/> */}
                     <button className='btn-sm'>Add To Cart</button>
                     </div>):''}
         </div>
