@@ -24,28 +24,38 @@ export default function Main(){
         <div className='row brands'>
             <h2><b>MEDAL WORTHY BRANDS TO BAG</b></h2>
             <div className='col-lg-12 d-flex'>
-                {data?data.slice(0,6).map(p=><div className='brandBox'><img src={p.thumbnail}/></div>):''}
+                {data?data.slice(0,6).map(p=><div className='brandBox'>
+                    <img src={p.thumbnail}/>
+                    <br/>
+                    <button className='btn-sm'>Add To Cart</button>
+                    </div>):''}
                 <div></div>
             </div>
         </div>
 
         
         <div className='row brands'>
-            <h2><b>GRAND GLOBAL BRANDS</b></h2>
+            <h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRAND GLOBAL BRANDS</b></h2>
             <div className='col-lg-12 d-flex'>
-                {data?data.slice(7,12).map(p=><div className='brandBox'><img src={p.thumbnail}/></div>):''}
+                {data?data.slice(7,13).map(p=><div className='brandBox'>
+                    <img src={p.thumbnail}/>
+                    <br/>
+                    <button className='btn-sm'>Add To Cart</button>
+                    </div>):''}
                 <div></div>
             </div>
         </div>
 
         <div className='row brands'>
-        <h2><b>SHOP BY CATEGORY</b></h2>
+        <h2 id='h2'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHOP BY MORE BRANDS</b></h2>
         </div>
 
         <div className='row'>
-                {data?data.slice(11,42).map(p=><div className='categoryBox col-lg-2'><img src={p.thumbnail}/></div>):''}
-                {/* <div></div> */}
-            {/* </div> */}
+                {data?data.slice(11,19).map(p=><div className='categoryBox col-lg-2'>
+                    <img src={p.thumbnail}/>
+                    <br/>
+                    <button className='btn-sm'>Add To Cart</button>
+                    </div>):''}
         </div>
     </div>
 }

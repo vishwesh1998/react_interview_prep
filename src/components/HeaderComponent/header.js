@@ -1,5 +1,7 @@
 import './header.css'
-import { CgProfile } from "react-icons/cg";
+// import { CgProfile } from "react-icons/cg";
+import { LuShoppingCart } from "react-icons/lu";
+import { RiContactsLine } from "react-icons/ri";
 
 export default function Header(){
     return <div className="container-fluid header">
@@ -18,9 +20,9 @@ export default function Header(){
         <div className='col-lg-12'>
         <ul className='ul'>
                 <li><input type='text' placeholder='Search for product, brand and more' className='form-control'/></li>
-                <li className='headerFont'><CgProfile/> Profile</li>
-                <li className='headerFont'>Wishlist</li>
-                <li className='headerFont'>Bag</li>
+                <li className='headerFont'><RiContactsLine/> Profile</li>
+                <li className='headerFont'><LuShoppingCart/> Cart</li>
+                {/* <li className='headerFont'>Bag</li> */}
         </ul>
         </div>
         </div>
