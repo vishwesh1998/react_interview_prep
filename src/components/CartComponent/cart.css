@@ -1,0 +1,16 @@
+.cart{
+    height: auto;
+    /* width: 100; */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    /* background: #000; */
+}
+
+.cart h1{
+    padding-bottom: 2rem;
+}
+
+.cart table{
+    width: 90%;
+    margin-left: 3.2rem;
+}

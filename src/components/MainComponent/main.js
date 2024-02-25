@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import './main.css'
 
-export default function Main(){
+export default function Main(props){
     const [data, setData] = useState('')
 
     let fetchApi = async () =>{
@@ -28,7 +28,7 @@ export default function Main(){
                     <img src={p.thumbnail}/>
                     <b>{p.price}/- Rs</b>
                     <br/>
-                    <button className='btn-sm'>Add To Cart</button>
+                    <button className='btn-sm' onClick={()=>props.cartValue(p)}>Add To Cart</button>
                     </div>):''}
                 <div></div>
             </div>
@@ -44,7 +44,7 @@ export default function Main(){
                     {/* <b>{p.brand}</b> */}
                     <b>{p.price}/- Rs</b>
                     <br/>
-                    <button className='btn-sm'>Add To Cart</button>
+                    <button className='btn-sm' onClick={()=>props.cartValue(p)}>Add To Cart</button>
                     </div>):''}
                 <div></div>
             </div>
@@ -59,7 +59,7 @@ export default function Main(){
                     <img src={p.thumbnail}/>
                     <b>{p.price}/- Rs</b>
                     {/* <br/> */}
-                    <button className='btn-sm'>Add To Cart</button>
+                    <button className='btn-sm' onClick={()=>props.cartValue(p)}>Add To Cart</button>
                     </div>):''}
         </div>
     </div>

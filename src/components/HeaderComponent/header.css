@@ -1,3 +1,4 @@
+
 .header{
     background: white;
     /* backgrou/nd: #000; */
@@ -5,8 +6,11 @@
     color: black;
     position: sticky;
     top: 0;
-    width: 100vw;
+    /* width: 100vw; */
     z-index: 1;
+    box-sizing: border-box;
+    /* padding: 0; */
+    /* box-sizing: content-box; */
     /* border: 1px solid black; */
 }
 
@@ -16,9 +20,9 @@ ul{
 }
 
 .ul{
-    position: relative;
+    position: absolute;
     top: -69px;
-    left: 50rem;
+    left: 48rem;
 }
 
 .ul input{

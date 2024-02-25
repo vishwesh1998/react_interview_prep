@@ -1,3 +1,4 @@
+
 .couresal img{
     /* margin-left: 20rem; */
     position: relative;
@@ -13,7 +14,9 @@
 
 .main{
     height: auto;
-    width: 100vw;
+    box-sizing: border-box;
+    /* box-sizing: cont-box; */
+    /* width: 100vw; */
     /* overflow:scroll; */
 }
 
@@ -39,7 +42,7 @@
     height: 18rem;
     padding: 2rem;
     position: relative;
-    left: -1rem;
+    /* left: -1rem; */
     border: 0.2px solid black;
     margin: 1rem;
     box-shadow: 5px 5px 8px black;
@@ -70,7 +73,7 @@
     width: 12rem;
     height: 15rem;
     position: relative;
-    left: 5rem;
+    left: 4rem;
     top: -65px;
     padding: 2rem;
     box-shadow: 5px 5px 8px black;
@@ -84,7 +87,7 @@
 }
 
 .categoryBox b {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 .brandBox img{
