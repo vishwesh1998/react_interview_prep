@@ -16,20 +16,20 @@
 }
 
 
-@media (max-width: 468px){
+/* @media (max-width: 468px){
     *{
         margin: 0;
         padding: 0;
     }
 
-    .cart h1{
+    .cart h1{ */
         /* margin-left: 16rem; */
         /* padding-left: 5rem; */
         /* left: 40px; */
-        position: relative;
-        left: 105%;
+        /* position: relative;
+        left: 105%; */
         /* box-sizing: border-box; */
-    }
+    /* }
 
     .table{
         position: relative;
@@ -37,4 +37,4 @@
         font-size: 1.5rem;
     }
 
-}
+} */

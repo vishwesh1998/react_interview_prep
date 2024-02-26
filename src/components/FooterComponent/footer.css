@@ -43,22 +43,22 @@
 }
 
 
-@media (max-width: 468px){
+/* @media (max-width: 468px){
     *{
         margin: 0;
         padding: 0;
-    }
+    } */
 
-    .footer{
+    /* .footer{ */
         /* wid; */
         /* box-sizing: content-box; */
-        width: 41em;
+        /* width: 41em;
         font-size: 1.4rem;
     }
 
-    .leftFooter{
+    .leftFooter{ */
         /* padding-top: 12rem; */
-        top: 10rem;
+        /* top: 10rem;
     }
 
     .leftFooter input{
@@ -71,4 +71,4 @@
         left: 5rem;
     }
     
-}
+} */

@@ -64,8 +64,11 @@
     font-size: 0.7rem;
 }
 
-#h2{
-    margin-bottom: 4rem;
+#h2{ 
+    
+    margin-left: 35%;
+    margin-top: 4%;
+    margin-bottom: 6%;
 }
 
 .categoryBox{
@@ -109,8 +112,90 @@
     font-weight: 700;
 }
 
+.headings{
+    /* justify-content: center; */
+    margin-left: 30%;
+    margin-top: 6%;
+    margin-bottom: -3%;
+}
 
-@media (max-width: 468px){
+.Headings{
+    /* justify-content: center; */
+    margin-left: 35%;
+    margin-top: 4%;
+    margin-bottom: -3%;
+}
+@media (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .headings{
+        font-size: 0.8rem;
+        margin-top: 4rem;
+        margin-left: 4rem;
+    }
+
+    #h2{
+        font-size: 0.8rem;
+        /* margin-top: 4rem; */
+        margin-left: 6rem;
+   
+    }
+
+    .Headings{
+        font-size: 0.8rem;
+        /* margin-top: 4rem; */
+        margin-left: 5rem;
+    }
+
+    .couresal img{
+        height: 40%;
+        margin-top: -0.5rem;
+    }
+
+    .brandBox{
+        margin-left: -9px;
+        position: relative;
+        top: -40px;
+        /* margin-top: -2px; */
+        /* width: 60%; */
+        /* height: 100%; */
+    }
+
+    .categoryBox{
+        /* margin-left: -9px; */
+        /* top: -10px; */
+        position: relative;
+        left: 2rem;
+        width: 70%;
+    }
+
+    
+    .categoryBox b{
+        margin-left: 3.5rem;
+    }
+
+    .categoryBox button{
+        margin-left: 2.5rem;
+    }
+
+
+    .brandBox b{
+        margin-left: 4rem;
+    }
+
+    .brandBox button{
+        margin-left: 1.5rem;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+}
+
+/* @media (max-width: 468px){
     *{
         margin: 0;
         padding: 0;
@@ -121,23 +206,23 @@
         width: 50rem;
     }
 
-    .brands{
+    .brands{ */
         /* box-sizing: border-box; */
-        width: 100%;
+        /* width: 100%; */
         /* height: 25rem; */
         /* margin-right: 5rem; */
         /* padding: 0; */
         
-    }
+    /* }
 
     .brandBox{
-        width: 60%;
         /* margin-left: ; */
+        /* width: 60%; */
         /* padding-left: -10px; */
-        left: -70px;
-        height: 100%;
+        /* left: -70px;
+        height: 100%; */
         /* padding: 2px; */
-    }
+    /* }
 
     .brandBox img{
         height: 60%;
@@ -145,12 +230,12 @@
 
     .brandBox button{
         height: 28%;
-    }
+    } */
 
-    .categoryBox{
-        left: 100%;
+    /* .categoryBox{
+        left: 100%; */
         /* margin-top: 1rem; */
-        height: 100%;
+        /* height: 100%;
     }
 
     .categoryBox button{
@@ -159,4 +244,4 @@
         margin-top: 20px;
     }
 
-}
+} */

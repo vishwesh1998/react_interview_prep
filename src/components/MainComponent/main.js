@@ -21,8 +21,8 @@ export default function Main(props){
             <img src={data?data[0].thumbnail:''}/>
         </div>
 
+        <h2 className='headings'><b>MEDAL WORTHY BRANDS TO BAG</b></h2>
         <div className='row brands'>
-            <h2><b>MEDAL WORTHY BRANDS TO BAG</b></h2>
             <div className='col-lg-12 d-flex box'>
                 {data?data.slice(0,6).map(p=><div className='brandBox'>
                     <img src={p.thumbnail}/>
@@ -35,9 +35,9 @@ export default function Main(props){
         </div>
 
         
+            <h2 className='Headings'><b>GRAND GLOBAL BRANDS</b></h2>
         <div className='row brands'>
-            <h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRAND GLOBAL BRANDS</b></h2>
-            <div className='col-lg-12 d-flex'>
+            <div className='col-lg-12 d-flex box'>
                 {data?data.slice(7,13).map(p=><div className='brandBox'>
                     <img src={p.thumbnail}/>
                     {/* <br/> */}
@@ -50,8 +50,8 @@ export default function Main(props){
             </div>
         </div>
 
+        <h2 id='h2'><b>SHOP BY MORE BRANDS</b></h2>
         <div className='row brands'>
-        <h2 id='h2'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHOP BY MORE BRANDS</b></h2>
         </div>
 
         <div className='row'>
