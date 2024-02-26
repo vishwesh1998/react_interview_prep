@@ -153,14 +153,16 @@
     .couresal img{
         height: 40%;
         margin-top: 1rem;
-        margin-left: -1rem;
+        left: 1rem;
     }
 
     .brandBox{
-        margin-left: -9px;
+        /* margin-left: -px; */
         position: relative;
         top: -40px;
-        
+        width: 80%;
+        height: 80%;
+        border: none;
         /* margin-top: -2px; */
         /* width: 60%; */
         /* height: 100%; */
@@ -172,6 +174,7 @@
         position: relative;
         left: 2rem;
         width: 70%;
+        border: none;
     }
 
     
@@ -185,11 +188,11 @@
 
 
     .brandBox b{
-        margin-left: 4rem;
+        margin-left: 3rem;
     }
 
     .brandBox button{
-        margin-left: 1.5rem;
+        margin-left: 1rem;
     }
 
     .box{
