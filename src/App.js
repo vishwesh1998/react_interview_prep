@@ -24,7 +24,7 @@ export default function App(){
     return (<div className='container-fluid App'>
         <Header value={value}/>
         <Routes>
-            <Route path='/' element={<Main cartValue={cartValue}/>}/>
+            <Route path='/' element={<Main cartValue={cartValue} value={value}/>}/>
             <Route path='/cart' element={<Cart value={value} deleteCart={deleteCart}/>}/>
         </Routes>
         <Footer/>

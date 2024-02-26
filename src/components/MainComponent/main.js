@@ -3,6 +3,7 @@ import './main.css'
 
 export default function Main(props){
     const [data, setData] = useState('')
+    const [btn, setBtn] = useState(false)
 
     let fetchApi = async () =>{
         const value = await fetch('https://dummyjson.com/products')
@@ -16,6 +17,11 @@ export default function Main(props){
         fetchApi()
     },[])
 
+    let addToCart = (p) =>{
+        if(window.confirm("You want to add it to cart !"))
+            props.cartValue(p)    
+        }
+
     return <div className="container-fluid main">
         <div className="row couresal container">
             <img src={data?data[0].thumbnail:''}/>
@@ -28,7 +34,7 @@ export default function Main(props){
                     <img src={p.thumbnail}/>
                     <b>{p.price}/- Rs</b>
                     <br/>
-                    <button className='btn-sm' onClick={()=>props.cartValue(p)}>Add To Cart</button>
+                    <button className='btn-sm crt' onClick={()=>addToCart(p)}>Add To Cart</button>
                     </div>):''}
                 <div></div>
                             </div>
@@ -44,7 +50,7 @@ export default function Main(props){
                     {/* <b>{p.brand}</b> */}
                     <b>{p.price}/- Rs</b>
                     <br/>
-                    <button className='btn-sm' onClick={()=>props.cartValue(p)}>Add To Cart</button>
+                    <button className='btn-sm' onClick={()=>addToCart(p)}>Add To Cart</button>
                     </div>):''}
                 <div></div>
             </div>
@@ -55,11 +61,11 @@ export default function Main(props){
         </div>
 
         <div className='row'>
-                {data?data.slice(11,19).map(p=><div className='categoryBox col-lg-2'>
+                {data?data.slice(14,22).map(p=><div className='categoryBox col-lg-2'>
                     <img src={p.thumbnail}/>
                     <b>{p.price}/- Rs</b>
                     {/* <br/> */}
-                    <button className='btn-sm' onClick={()=>props.cartValue(p)}>Add To Cart</button>
+                    <button className='btn-sm' onClick={()=>addToCart(p)}>Add To Cart</button>
                     </div>):''}
         </div>
     </div>
