@@ -152,13 +152,15 @@
 
     .couresal img{
         height: 40%;
-        margin-top: -0.5rem;
+        margin-top: 1rem;
+        margin-left: -1rem;
     }
 
     .brandBox{
         margin-left: -9px;
         position: relative;
         top: -40px;
+        
         /* margin-top: -2px; */
         /* width: 60%; */
         /* height: 100%; */

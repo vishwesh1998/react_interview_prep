@@ -42,6 +42,41 @@
     /* margin-left: 1px; */
 }
 
+@media (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .leftFooter{
+        position: relative;
+        top: 15rem;
+        /* width: 25%; */
+        /* margin-top: 80%; */
+    }
+
+    .rightFooter{
+        /* left: 50rem; */
+        left: -24rem;
+        top: -9rem;
+    }
+
+    .leftFooter input{
+        width: 15rem;
+        height: 2rem;
+    }
+
+    .leftFooter button{
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .leftFooter b{
+        /* left: 5rem; */
+        margin-left: 3rem;
+        font-size: 13px;
+    }
+}
 
 /* @media (max-width: 468px){
     *{

@@ -6,9 +6,9 @@ export default function Cart(props){
         <div className="row">
             <div className="col-lg-12">
         <h1 className="text-center">Welcome to your cart !!</h1>
-            <table className="table table-dark">
+            <table className="table table-striped table-responsive-lg table-dark">
                 <thead>
-                    <tr>
+                    <tr className='text-center'>
                         <th>title</th>
                         <th>image</th>
                         <th>Brand</th>
@@ -18,7 +18,7 @@ export default function Cart(props){
                     </tr>
                 </thead>
                 <tbody>
-                    {props.value?props.value.map(p=><tr>
+                    {props.value?props.value.map(p=><tr className='text-center'>
                         <td>{p.title}</td>
                         <td><img src={p.thumbnail} width={60} height={60}/></td>
                         <td>{p.brand}</td>

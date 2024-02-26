@@ -15,6 +15,24 @@
     margin-left: 3.2rem;
 }
 
+@media (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .cart h1{
+        font-size: 1.5rem;
+    }
+
+    .table{
+        /* width: 50px; */
+        position: relative;
+        left: -2.5rem;
+        /* margin-left: 10rem; */
+
+    }
+}
 
 /* @media (max-width: 468px){
     *{
